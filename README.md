@@ -17,13 +17,10 @@ To write a program to implement the Decision Tree Regressor Model for Predicting
 10. Predict the result for the given values.
 ## Program:
 ```
-Program to implement the Decision Tree Regressor Model for Predicting the Salary of the Employee.
 Developed by: Sai Darshan G
 RegisterNumber:  212221240047
 import pandas as pd
 data=pd.read_csv("Salary.csv")
-data.head()
-data.info()
 data.isnull().sum()
 from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
@@ -39,8 +36,6 @@ y_pred=dt.predict(X_test)
 from sklearn import metrics
 mse=metrics.mean_squared_error(Y_test,y_pred) 
 r2=metrics.r2_score(Y_test,y_pred)
-mse
-r2
 dt.predict([[5,6]])
 ```
 ## Output:
